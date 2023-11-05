@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_26_113633) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_28_134731) do
   create_table "logs", force: :cascade do |t|
     t.string "user_id"
     t.json "data", default: {}, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "log_type"
   end
 
 end

@@ -8,6 +8,9 @@
         <th id="logs-data" class="text-left py-3 px-6 uppercase font-semibold text-sm hover:cursor-pointer">
           <span>Data</span>
         </th>
+        <th id="logs-data" class="text-left py-3 px-6 uppercase font-semibold text-sm hover:cursor-pointer">
+          <span>Log type</span>
+        </th>
         <th id="logs-created-at" class="text-left py-3 px-6 uppercase font-semibold text-sm hover:cursor-pointer">
           <span>Created_at</span>
         </th>
@@ -19,6 +22,7 @@
         <tr>
           <td class="text-left py-3 px-6"><%= log.user_id %></td>
           <td class="text-left py-3 px-6"><%= log.data %></td>
+          <td class="text-left py-3 px-6"><%= log.log_type_description %></td>
           <td class="text-left py-3 px-6"><%= log.created_at %></td>
         </tr>
       <% end %>

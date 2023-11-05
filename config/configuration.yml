@@ -1,0 +1,6 @@
+defaults:
+  bunny_host: 'localhost'
+  bunny_port: '5672'
+  bunny_vhost: '/'
+  bunny_username: 'guest'
+  bunny_password: 'guest'
